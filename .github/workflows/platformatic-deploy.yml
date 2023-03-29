@@ -20,8 +20,9 @@ jobs:
         uses: platformatic/onestep@latest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          platformatic_api_key: ${{ secrets.PLATFORMATIC_API_KEY }}
+          platformatic_workspace_key: ${{ secrets.PLATFORMATIC_API_KEY }}
           platformatic_config_path: ./platformatic.service.json
+          platformatic_workspace_id: fd12d2ca-959f-44f7-a8ea-6774cfe1fe3d
         env:
           PLT_SERVER_LOGGER_LEVEL: info 
           PORT: 3042 
