@@ -1,6 +1,8 @@
 name: Deploy Platformatic application to the cloud
 on:
-  pull_request:
+  push:
+    branches:
+      - main
     paths-ignore:
       - 'docs/**'
       - '**.md'
