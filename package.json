@@ -6,7 +6,7 @@
     "fastify": "^4.24.3"
   },
   "dependencies": {
-    "platformatic": "^1.9.0"
+    "platformatic": "1.8.1"
   },
   "engines": {
     "node": "^16.17.0 || ^18.8.0 || >=19"
