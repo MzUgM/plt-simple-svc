@@ -23,7 +23,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           platformatic_workspace_key: ${{ secrets.PLATFORMATIC_API_KEY }}
           platformatic_config_path: ./platformatic.service.json
-          platformatic_workspace_id: baf2f1c5-5496-4aed-b769-a423df741b49
+          platformatic_workspace_id: 51341712-edc1-46a0-b056-7771a48176c2
         env:
           PLT_SERVER_LOGGER_LEVEL: info 
           PORT: 3042 
