@@ -3,10 +3,10 @@
     "start": "platformatic service start"
   },
   "devDependencies": {
-    "fastify": "^4.24.3"
+    "fastify": "^4.25.2"
   },
   "dependencies": {
-    "platformatic": "1.8.0"
+    "platformatic": "^1.19.0"
   },
   "engines": {
     "node": "^16.17.0 || ^18.8.0 || >=19"
