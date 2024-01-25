@@ -10,6 +10,11 @@ jobs:
     permissions:
       contents: read
     runs-on: ubuntu-latest
+    env:
+      PLT_SERVER_LOGGER_LEVEL: info
+      PORT: 3042
+      PLT_SERVER_HOSTNAME: 127.0.0.1
+      DEPLOY_SERVICE_HOST: https://plt-development-deploy-service.fly.dev
     steps:
       - name: Checkout application project repository
         uses: actions/checkout@v3
@@ -22,8 +27,3 @@ jobs:
           platformatic_workspace_key: ${{ secrets.PLT_TEST_API_KEY }}
           platformatic_config_path: ./platformatic.service.json
           platformatic_workspace_id: 699abbbf-190a-4218-8a89-1bcd67ef2db1
-        env:
-          PLT_SERVER_LOGGER_LEVEL: info 
-          PORT: 3042 
-          PLT_SERVER_HOSTNAME: 127.0.0.1 
-          deploy_service_host: https://plt-development-deploy-service.fly.dev
